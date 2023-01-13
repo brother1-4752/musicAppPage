@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper{
+    width: 635px;
+    height: 630px;
+    background-color: rgba(128, 159, 255, 0.2);
+  /*   opacity: 0.2; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+  }
+  /* 공통 레이아웃, 헤더 설정 */
+  .app {
+    width: 235px;
+    height: 590px;
+    background-color: white;
+    border: 5px solid rgba(0, 64, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: rgba(128, 159, 255, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  
+  .app > header{
+    width: 225px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  header > i {
+    margin: 0 15px;
+  }
+  
+  /* main */
+  .main-left {
+    width: 225px;
+    height: 210px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-img{
+    width: 65px;
+    height: 65px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 64, 255, 0.6) 0px -5px 50px 3px;
+  }
+  
+  
+  
+  .profile-name {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  
+  .profile-genre{
+    font-size: 12px;
+    opacity: 0.35;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.35);
+  }
+  
+  .btns-shuffle{
+    width: 80px;
+    height: 30px;
+    background-color: #222222;
+    font-size: 11px;
+    color: rgba(255,255,255,0.8);
+    margin-right: 15px;
+  }
+  
+  .btns-like{
+    width: 80px;
+    height: 30px;
+    padding-left: 20px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+  }
+  
+  .btns-shuffle,
+  .btns-like{
+    font-weight: 300;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(128, 159, 255, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  
+  .btns{
+    position: relative;
+  }
+  
+  .fa-heart{
+    position: absolute;
+    top: 9px;
+    right: 58px;
+    font-size: 12px;
+  }
+  
+  .playlist{
+    height: 240px;
+    width: 225px;
+  }
+  
+  .playlist-data{
+    width: 195px;
+    height: 45px;
+    display: flex;
+    margin: 3px 15px 0 15px;
+    opacity: 0.5;
+  }
+  
+  .playlist > .playlist-data:nth-child(2){
+    opacity: 1;
+  }
+  
+  .playlist-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    margin-right: 10px;
+  }
+  
+  .playlist-img-current{
+    position: relative;
+  }
+  
+  .playlist-img-current > img{
+    box-shadow: rgba(128, 159, 255, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  
+  .fa-chart-simple{
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .playlist-description{
+    width: 130px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  
+  .playlist-singer{
+    margin-top: 3px;
+    font-size: 10px;
+    zoom: 0.65;
+    color: #989898;
+  }
+  
+  .playlist-song{
+    margin-top: 5px;
+    font-size: 11px;  
+  }
+  
+  .playlist-more{
+    width: 20px;
+    height: 25px;
+    color: #989898;
+    text-align: center;
+    margin: auto 0;
+    font-size: 14px;
+  }
+  
+  /* controller */
+  .controller-left{
+    width : 210px;
+    height: 50px;
+    background-color : rgba(0,0,0,0.85);
+    margin-left: 7px;
+    border-radius: 23px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+  }
+  
+  .current-singer-left {
+    font-size: 10px;
+    zoom: 0.8;
+    color: rgba(143,143,143,0.8);
+    margin-bottom: 8px;
+  }
+  
+  .current-song-left{
+    font-size: 10px;
+    color: rgba(255,255,255,0.85);
+    zoom: 0.85;
+  }
+  
+  .controller-console-left{
+    width: 80px;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 5px;
+  }
+  
+  .controller-console-left > i {
+    color: rgba(255,255,255,0.85);
+    font-size: 11px;
+  }
+  
+  /* right-page */
+  .main-right {
+    width: 225px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .current-cover{
+    width: 180px;
+    height: 180px;
+    margin: 45px 0 40px 0;
+    border-radius: 7px;
+    box-shadow: rgba(194, 186, 110, 1) 0px 5px 60px 10px;
+  }
+  
+  .current-description-right{
+    width: 225px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .current-song-right{
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  
+  .current-singer-right{
+    font-size: 12px;
+    opacity: 0.35;
+  }
+  
+  .controller-right{
+    height: 180px;
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .time {
+    height: 15px;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .time > span {
+    opacity: 0.2;
+    font-size: 10px;
+  }
+  
+  .state-bar {
+    width: 180px;
+    height: 10px;
+    position: relative;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .bar--current{
+    width: 60px;
+    height: 3px;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .bar--circle{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: -2px;
+    left: 59px;
+  }
+  
+  .bar--left{
+    width: 120px;
+    height: 3px;
+    background-color: rgba(0,0,0,0.15);
+  }
+  
+  .controller-console-right{
+    height: 100px;
+    width: 180px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }

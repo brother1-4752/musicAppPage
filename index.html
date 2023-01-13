@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Music App</title></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ef21b2e4b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="app">
+      <header>
+        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </header>
+      <main class="main-left">
+        <img class="profile-img"
+          src="https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202109%2F20210928185924579.jpg" />
+        <h1 class="profile-name">김 필, Feel Kim</h1>
+        <h6 class="profile-genre">발라드, Ballad</h6>
+        <div class="btns">
+          <input type="button" class="btns-shuffle" value="Shuffle" />
+          <i class="fa-solid fa-heart"></i>
+          <input type="button" class="btns-like" value="333,333" />
+        </div>
+      </main>
+      <section class="playlist">
+        <div class="playlist-data">
+          <img src="https://musicmeta-phinf.pstatic.net/album/007/995/7995439.jpg?type=r360Fll&v=20220907110826"
+            class="playlist-img"></img>
+          <div class="playlist-description">
+            <h5 class="playlist-singer">박봄(Park Bom), 정세운, 김필, 나나(NANA)</h5>
+            <h5 class="playlist-song">싱포레스트2 (설레임)</h5>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical playlist-more"></i>
+        </div>
+
+        <div class="playlist-data">
+          <div class="playlist-img-current">
+            <img src="https://musicmeta-phinf.pstatic.net/album/004/447/4447980.jpg?type=r360Fll&v=20220518013511"
+              class="playlist-img" />
+            <i class="fa-solid fa-chart-simple"></i>
+          </div>
+          <div class="playlist-description">
+            <h5 class="playlist-singer">김 필, Feel Kim</h5>
+            <h5 class="playlist-song">그 때 그 아인</h5>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical playlist-more"></i>
+        </div>
+
+        <div class="playlist-data">
+          <img
+            src="https://search.pstatic.net/common?type=f&size=150x150&quality=100&direct=true&src=https%3A%2F%2Fmusicmeta-phinf.pstatic.net%2Falbum%2F007%2F425%2F7425165.jpg%3Ftype%3Dr204Fll%26v%3D20220324175911"
+            class="playlist-img"></img>
+          <div class="playlist-description">
+            <h5 class="playlist-singer">김 필, Feel Kim</h5>
+            <h5 class="playlist-song">시작 (Push & pull)</h5>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical playlist-more"></i>
+        </div>
+
+        <div class="playlist-data">
+          <img src="https://musicmeta-phinf.pstatic.net/album/006/445/6445317.jpg?type=r360Fll&v=20211101135706"
+            class="playlist-img"></img>
+          <div class="playlist-description">
+            <h5 class="playlist-singer">김 필, Feel Kim</h5>
+            <h5 class="playlist-song">처음 만난 그때처럼
+            </h5>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical playlist-more"></i>
+        </div>
+
+        <div class="playlist-data">
+          <img src="https://musicmeta-phinf.pstatic.net/album/003/236/3236058.jpg?type=r360Fll&v=20220518013511"
+            class="playlist-img"></img>
+          <div class="playlist-description">
+            <h5 class="playlist-singer">김 필, Feel Kim</h5>
+            <h5 class="playlist-song">사랑 둘</h5>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical playlist-more"></i>
+        </div>
+
+        <div class="playlist-data">
+          <img src="https://musicmeta-phinf.pstatic.net/album/003/236/3236058.jpg?type=r360Fll&v=20220518013511"
+            class="playlist-img"></img>
+          <div class="playlist-description">
+            <h5 class="playlist-singer">일부러</h5>
+            <h5 class="playlist-song">높이 벗어나도록함</h5>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical playlist-more"></i>
+        </div>
+      </section>
+      <section class="controller-left">
+        <div class="current">
+          <h6 class="current-singer-left">김 필, Feel Kim</h6>
+          <h5 class="current-song-left">그 때 그 아인</h5>
+        </div>
+        <div class="controller-console-left">
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-solid fa-pause"></i>
+          <i class="fa-solid fa-forward-step"></i>
+        </div>
+      </section>
+    </section>
+    <section class="app">
+      <header>
+        <i class="fa-solid fa-arrow-left"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </header>
+      <main class="main-right">
+        <img class="current-cover" src="https://musicmeta-phinf.pstatic.net/album/004/447/4447980.jpg?type=r360Fll&v=20220518013511" />
+        <div class="current-description-right">
+          <h5 class="current-song-right">그 때 그 아인</h5>
+          <h6 class="current-singer-right">김 필, Feel Kim</h6>
+        </div>
+      </main>
+      <section class="controller-right">
+        <div class="time">
+          <span class="time-current">1:27</span>
+          <span class="time-finished">4:50</span>
+        </div>
+        <div class="state-bar">
+          <div class="bar--current"></div>
+          <div class="bar--circle"></div>
+          <div class="bar--left"></div>
+        </div>
+        <div class="controller-console-right">
+          <i class="fa-solid fa-repeat fa-sm"></i>
+          <i class="fa-solid fa-backward-step fa-sm"></i>
+          <i class="fa-solid fa-circle-play fa-3x"></i>
+          <i class="fa-solid fa-forward-step fa-sm"></i>
+          <i class="fa-solid fa-shuffle fa-sm"></i>
+        </div>
+        
+      </section>
+      
+    </section>
+  </div>
+</body>
+
+</html>
